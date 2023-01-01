@@ -1,0 +1,12 @@
+---
+
+- name: Collect System Information
+  hosts: localhost 
+  become: true
+  vars:
+    report_admin_email: admin@lab.local
+
+  tasks:
+    - name: Generate System report
+      include_role:
+        name: system-report

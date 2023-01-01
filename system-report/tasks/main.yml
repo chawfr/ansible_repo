@@ -1,0 +1,5 @@
+---
+# Tasks file for system-report
+
+-name: Generate and save system report in html format
+ include_tasks: "system-information.yml" 

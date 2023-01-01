@@ -1,0 +1,8 @@
+---
+# Tasks file for system-report
+
+- name: Generate and save system report in html format
+ template: 
+   dest: /tmp/report/{{ inventory_hostname }}.html
+   src: system-information.html.j2
+ delegate_to: localhost
